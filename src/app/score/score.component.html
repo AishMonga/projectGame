@@ -1,0 +1,57 @@
+<!-- <p>score is {{ score }}</p>  -->
+<h1 class="text-center">
+  Your Score:
+</h1>
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <!-- <th></th> -->
+      <th scope="col">NAME</th>
+      <th scope="col">SCORE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <th scope="row"></th>
+    <tr>
+      <!-- <td ng-repeat="d in data | orderBy: 'created_at' :true"></td> -->
+      <td>{{ crtPlayer.name }}</td>
+
+      <td>{{ crtPlayer.score }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="text-center">
+  Previous Scores:
+</h1>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <!-- <th></th> -->
+      <th scope="col">NAME</th>
+      <th scope="col">SCORE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <th scope="row"></th>
+    <tr *ngFor="let d of (data | slice: 0:10)">
+      <!-- <td ng-repeat="d in data | orderBy: 'created_at' :true"></td> -->
+      <td>{{ d.name }}</td>
+      <td>{{ d.score }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="text-center ">
+  <button
+    type="button"
+    class="btn btn-success btn-lg btn-block"
+    [routerLink]="['/player-details']"
+    routerLinkActive="router-link-active"
+  >
+    Restart Game
+  </button>
+</div>
+
+<!-- </div> -->

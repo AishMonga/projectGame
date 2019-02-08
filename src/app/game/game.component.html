@@ -1,0 +1,83 @@
+<!-- <div class="container col-6"> -->
+<div class="container">
+  <div class="h2 text-center">
+    <h2>Time Left: {{ timeLeft }} , &nbsp;</h2>
+    <br />
+    <h2>Score : {{ score }}</h2>
+  </div>
+  <div class="row">
+    <div class=" col-12 d-flex justify-content-around">
+      <app-c1 [color]="ch1" (click)="onClick(ch1)"></app-c1>
+
+      <app-c2 [color]="ch2" (click)="onClick(ch2)"></app-c2>
+    </div>
+    <div class=" col-12 d-flex justify-content-around">
+      <app-c3 [color]="ch3" (click)="onClick(ch3)"></app-c3>
+
+      <app-c4 [color]="ch4" (click)="onClick(ch4)"></app-c4>
+    </div>
+  </div>
+
+  <!-- </div> -->
+  <!-- <p>
+  game works!
+</p> -->
+  <!-- --------------------------------------------------------------- -->
+  <!-- <span 
+    *ngIf="eachOutlet.dollarValue != 0"
+    [style.color]="eachOutlet.dollarValue < 0 ? 'red' : null">
+      {{eachOutlet.dollarValue | number:'1.0-2'}}
+  </span> -->
+  <!-- ************************* -->
+  <!-- <div class="row" *ngIf="show1">
+    <div *ngIf="c1">
+      <app-c1></app-c1>
+    </div>
+  </div>
+  <div class="row" *ngIf="show2">
+    <div *ngIf="c2">
+      <app-c2></app-c2>
+    </div>
+  </div>
+  <div class="row" *ngIf="show3">
+    <div *ngIf="c3">
+      <app-c3></app-c3>
+    </div>
+  </div>
+  <div class="row" *ngIf="show4">
+    <div *ngIf="c4">
+      <app-c4></app-c4>
+    </div>
+  </div> -->
+  <!-- 
+  <div class="d-flex flex-wrap container">
+  <div class="row" *ngIf="show">
+    <div class="showDiv">
+      <div *ngIf="c1">
+        <app-c1></app-c1>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="show">
+    <div class="showDiv">
+      <div *ngIf="c2">
+        <app-c2></app-c2>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="show">
+    <div class="showDiv">
+      <div *ngIf="c3">
+        <app-c3></app-c3>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="show">
+    <div class="showDiv">
+      <div *ngIf="c4">
+        <app-c4></app-c4>
+      </div>
+    </div>
+  </div>
+</div> -->
+</div>

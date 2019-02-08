@@ -1,0 +1,22 @@
+<!-- <p>
+  player-details works!
+</p> -->
+<div class="container w-25 text-center">
+  <h1>Fastest Click First</h1>
+
+  <div class="form-group">
+    <label for="usr">Name of Player:</label>
+    <input #playerName type="text" class="form-control" id="usr" />
+    <!-- <span ng-show="!somefield.length">Please enter something!</span>
+    <span ng-show="somefield.length">Good!</span> -->
+  </div>
+
+  <button
+    (click)="onClickPlay(playerName.value)"
+    type="button"
+    class="btn btn-success btn-lg"
+  >
+    <!-- (click)="onClick(playerName.value)" -->
+    Play
+  </button>
+</div>
