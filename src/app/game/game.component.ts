@@ -9,7 +9,7 @@ import { Player } from "../player-details/player";
   styleUrls: ["./game.component.css"]
 })
 export class GameComponent implements OnInit {
-  timeLeft: number = 10; // actual 60
+  timeLeft: number = 60; // actual 60
   interval;
   score: number = 0;
   // show: boolean = true;
